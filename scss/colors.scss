@@ -1,0 +1,62 @@
+// ## Colors
+
+// ### Primary
+$desaturated-red: hsl(0, 36%, 70%);
+$desaturated-red-transparency: hsla(0, 36%, 70%, 0.6);
+$soft-red: hsl(0, 93%, 68%);
+
+// ### Neutral
+$dark-grayish-red: hsl(0, 6%, 24%);
+
+// ### Gradients
+$linear-gradient-1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+$linear-gradient-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+$linear-gradient-3: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%));
+
+.outer-container{
+    background-image: $linear-gradient-1;
+}
+
+.text-box{
+    .heading{
+        .big-heading{
+            color: $dark-grayish-red;
+        }
+        .contrast{
+            color: $desaturated-red;
+        }
+    }
+    .message{
+        .text{
+            color: $desaturated-red;
+        }
+    }
+
+    .input-box{
+        input{
+            background-color: hsla(0, 0%, 0%, 0);
+            border: solid 2px $desaturated-red-transparency;
+            &::placeholder{
+                color: $desaturated-red-transparency;
+            }
+            &:focus{
+                border-color: $soft-red;
+            }
+        }
+        .arrow-btn{
+            background-image: $linear-gradient-2;
+            box-shadow: 0px 10px 30px -10px $soft-red;
+            img{
+                transition: 0.5s;
+            }
+            &:hover{
+                cursor: pointer;
+                background-image: $linear-gradient-3;
+                img{
+                    transform: scale(1.3);
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}

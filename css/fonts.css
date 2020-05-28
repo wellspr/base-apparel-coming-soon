@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+.text-box {
+  text-align: center;
+}
+
+.text-box .heading .big-heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.7rem;
+}
+
+.text-box .heading .contrast {
+  font-weight: 300;
+}
+
+.text-box .message .text {
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 1023px) {
+  .heading .big-heading {
+    font-size: 2.4rem;
+  }
+  .message .text {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .big-heading {
+    font-size: 3rem;
+  }
+  .message {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .big-heading {
+    font-size: 3.5rem;
+  }
+  .message {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .big-heading {
+    font-size: 4rem;
+  }
+  .message {
+    font-size: 1rem;
+  }
+}
