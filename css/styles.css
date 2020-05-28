@@ -54,6 +54,10 @@ body {
   padding-bottom: 1rem;
 }
 
+.main .text-box .heading .big-heading span {
+  display: block;
+}
+
 .main .text-box .message {
   padding: 0 8%;
 }
@@ -81,20 +85,14 @@ body {
 }
 
 .main .text-box .input-box .arrow-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
+  z-index: 10;
   right: 0;
   width: 70px;
   height: 50px;
   padding: 0;
   margin-right: 8%;
   border-radius: 25px 25px;
-}
-
-.main .text-box .input-box .arrow-btn img {
-  margin-left: 5px;
 }
 
 .footer footer {
@@ -198,7 +196,7 @@ body {
   }
   .main .text-box .input-box .arrow-btn {
     margin-right: 0;
-    width: 85px;
+    width: 95px;
     height: 54px;
   }
 }

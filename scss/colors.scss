@@ -33,7 +33,7 @@ $linear-gradient-3: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%))
     }
 
     .input-box{
-        input{
+        input[type='email']{
             background-color: hsla(0, 0%, 0%, 0);
             border: solid 2px $desaturated-red-transparency;
             &::placeholder{
@@ -44,18 +44,21 @@ $linear-gradient-3: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%))
             }
         }
         .arrow-btn{
-            background-image: $linear-gradient-2;
+            background-image:
+                url("../images/icon-arrow.svg"),
+                $linear-gradient-2;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: none;
             box-shadow: 0px 10px 30px -10px $soft-red;
-            img{
-                transition: 0.5s;
-            }
+            transition: 0.5s;
             &:hover{
                 cursor: pointer;
-                background-image: $linear-gradient-3;
-                img{
-                    transform: scale(1.3);
-                    transition: 0.5s;
-                }
+                background-image:
+                    url("../images/icon-arrow.svg"),
+                    $linear-gradient-3;
+                background-position: 55% 50%;
+                transition: 0.5s;
             }
         }
     }
